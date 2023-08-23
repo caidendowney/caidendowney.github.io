@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Comment -->
+	<head>
+		<meta charset = "utf-8">
+		 <link rel="stylesheet" href="bballGridStyle.css" />
+		 <title> Jersey Grids </title>
+		 <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/basketball-26/64/Basketball-04-512.png"  type="image/x-icon">		 	
+	</head>
+		<body onload="generate()">
+			<div class="container" id='topNavBar'>
+				<div class="dropdown">
+					<img id="selectimg" src=""> 
+            		<button class="dropbtn" id='dropbtn' value="Team Select"> Team Select </button> 
+            		<div class="dropdown-content">
+    					<div onclick="selectTeam('hawks')"> <img src='https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png' width="85"></div>
+    					<div onclick="selectTeam('celtics')"> <img src='https://loodibee.com/wp-content/uploads/nba-boston-celtics-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('nets')"> <img src='https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo.png' width="85" ></div>
+    					<div onclick="selectTeam('hornets')"> <img src='https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('bulls')"> <img src='https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('cavs')"> <img src='https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022.png' width="85" > </div>
+    					<div onclick="selectTeam('mavericks')"> <img src='https://loodibee.com/wp-content/uploads/dallas-mavericks-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('nuggets')"> <img src='https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018.png' width="85" > </div>
+    					<div onclick="selectTeam('pistons')"> <img src='https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('warriors')"> <img src='https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020.png' width="85" > </div>
+    					<div onclick="selectTeam('rockets')"> <img src='https://loodibee.com/wp-content/uploads/houston-rockets-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('pacers')"> <img src='https://loodibee.com/wp-content/uploads/indiana-pacers-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('clippers')"> <img src='https://loodibee.com/wp-content/uploads/los-angeles-clippers-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('lakers')"> <img src='https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('grizzlies')"> <img src='https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('heat')"> <img src='https://loodibee.com/wp-content/uploads/miami-heat-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('bucks')"> <img src='https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo.png' width="85"> </div>
+    					<div onclick="selectTeam('timberwolves')"> <img src='https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('pelicans')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('knicks')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('thunder')"> <img src='https://loodibee.com/wp-content/uploads/oklahoma-city-thunder-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('magic')"> <img src='https://loodibee.com/wp-content/uploads/orlando-magic-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('sixers')"> <img src='https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('suns')"> <img src='https://loodibee.com/wp-content/uploads/phoenix-suns-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('blazers')"> <img src='https://loodibee.com/wp-content/uploads/portland-trail-blazers-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('kings')"> <img src='https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo.png' width="85" > </div>
+    					<div onclick="selectTeam('spurs')"> <img src='https://loodibee.com/wp-content/uploads/san-antonio-spurs-logo-symbol.png' width="85" > </div>
+    					<div onclick="selectTeam('raptors')"> <img src='https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020.png' width="85" > </div>
+    					<div onclick="selectTeam('jazz')"> <img src='https://loodibee.com/wp-content/uploads/utah-jazz-logo-2022.png' width="85" > </div>
+    					<div onclick="selectTeam('wizards')"> <img src='https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png' width="85" > </div>
+  					</div>
+        		</div>
+				<div id="title"> <h1> Jersey Grids </h1> </div> 
+				<form autocomplete="off">
+				<div class="search" id="search">
+                		<input type="text" placeholder="Search Players" name="playerSearch" id="searchBar" autocomplete="off">
+        		</div> 
+        		</form>
+        	</div>
+
+		<div class="flex-container">
+			<div class="logos">
+				 <div class="box"></div>
+				 <img src="" class="teamLogo" id="team1"/>
+				 <img src="" class="teamLogo" id="team2"/>
+				 <img src="" class="teamLogo" id="team3"/>
+
+			</div>
+			<div class="col">
+				<div class="flex-col" id="number1"></div>
+				<div class="playerSquare" id="square1" onclick= "showSearch(1)"> </div>
+				<div class="playerSquare" id="square4" onclick= "showSearch(4)"> </div>
+				<div class="playerSquare" id="square7" onclick= "showSearch(7)"> </div>
+			</div>
+
+			<div class="col">
+				<div class="flex-col" id="number2"></div>
+				<div class="playerSquare" id="square2" onclick= "showSearch(2)"> </div>
+				<div class="playerSquare" id="square5" onclick= "showSearch(5)"> </div>
+				<div class="playerSquare" id="square8" onclick= "showSearch(8)"> </div>
+			</div>
+			<div class="col">
+				<div class="flex-col" id="number3"></div>
+				<div class="playerSquare" id="square3" onclick= "showSearch(3)"> </div>
+				<div class="playerSquare" id="square6" onclick= "showSearch(6)"> </div>
+				<div class="playerSquare" id="square9" onclick= "showSearch(9)"> </div>
+			</div>
+		</div>
+		<div id="bottom">
+			<!-- <button class="generateButton" onclick="generate()">Generate Grid</button> -->
+			<u onclick="howtoplay()"> <b> How To Play </b> </u>
+			<div class="howtoplay" id="howtoplay"> 
+				<div class="howtoplay-content">
+					<span class="close" onclick="hideHTP()">&times;</span>
+					<h2> How To Play </h2>
+
+					<p> The grid randomly generates three jersey numbers and three NBA teams. Each team is guranteed to have at least one player who has played under that number. To get a square correct you must select a player who has played at least one game with the team in its row, under the number in its column. </p>
+
+					<p>To select a player, click on a square and type the name of the player in to the search bar. Click on the name of the desired player and if that player has played for the team and worn that jersey number the square will become filled in. You have unlimited guesses, once a player is used they can't be used again and you must fill in all 9 squares to win the game. </p>
+
+					<p> If you would like to only play with only one team hover over the "Team Select" button and click on the team desired.</p>
+
+					<p> This game does recognize old franchise names and locations, for example you could choose a player who played for the Charlotte Bobcats as someone for the Hornets.</p>
+
+					<p>*Note this doesn't include any new players or new numbers for the upcoming 2023-2024 NBA season* </p>
+				</div>
+			</div>
+				<div class="howtoplay" id="gridComplete"> 
+					<div class="howtoplay-content">
+						<span class="close" onclick="hideWin()">&times;</span>
+						<h2> Congratulations! </h2>
+						<p> You have completed the grid! Would you like to play again? </p>
+						<button class="generateButton" onclick="generate(); hideWin();"> Play Again </button>
+					</div>
+				</div>
+		</div>
+		</body>
+		<script src="bballGridJS.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script> <!-- CONFETTI ANIMATION -->
+			
