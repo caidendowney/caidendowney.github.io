@@ -222,7 +222,7 @@ const teams = {
 		for (div of divs){
 			div.style.opacity = "0.5";
 		}
-		document.getElementById("searchBar").focus();
+		//document.getElementById("searchBar").focus();
 		document.getElementById("search").style.opacity = "1.0"
 		document.getElementById("topNavBar").style.opacity = "1.0"; 	
 		let body = document.body;
@@ -241,7 +241,6 @@ const teams = {
 		for (div of boxes){
 			div.style.backgroundColor = "#757083";
 		}
-		event.preventDefault();
 		document.getElementById('searchBar').value = '';
 		let body = document.body;
 		body.removeAttribute("onclick");
