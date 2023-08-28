@@ -203,8 +203,9 @@ const teams = {
 	function selectTeam(team){ 
 		teamObj= teams[team];
 		document.getElementById("dropbtn").value = team;
-		document.getElementById("selectimg").src = teamObj.logo;
-		document.getElementById("dropbtn").textContent = team.charAt(0).toUpperCase() + team.slice(1);
+		//document.getElementById("selectimg").src = teamObj.logo;
+		//document.getElementById("selectimg").style.display = 'block';
+		//document.getElementById("dropbtn").textContent = team.charAt(0).toUpperCase() + team.slice(1);
 		generate();
 	}
 
@@ -218,6 +219,8 @@ const teams = {
 		search.style.display = "inline-block"; 	
 		var title = document.getElementById("title");
 		title.style.display = "none";
+		var drop = document.getElementById("dropbtn");
+		drop.style.display = "none";
 		const divs = document.getElementsByTagName("div");
 		for (div of divs){
 			div.style.opacity = "0.5";
@@ -233,6 +236,7 @@ const teams = {
 	function closeSearch() {
   		document.getElementById("search").style.display = "none";
   		document.getElementById("title").style.display = "block";
+  		document.getElementById("dropbtn").style.display = "block";
   		const divs = document.getElementsByTagName("div");
 		for (div of divs){
 			div.style.opacity = "1.0";
@@ -241,6 +245,7 @@ const teams = {
 		for (div of boxes){
 			div.style.backgroundColor = "#757083";
 		}
+		event.preventDefault();
 		document.getElementById('searchBar').value = '';
 		let body = document.body;
 		body.removeAttribute("onclick");

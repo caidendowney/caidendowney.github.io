@@ -10,42 +10,42 @@
 		<body onload="generate()">
 			<div class="container" id='topNavBar'>
 				<div class="dropdown">
-					<img id="selectimg" src=""> 
+					<!--<img id="selectimg" src=""> -->
             		<button class="dropbtn" id='dropbtn' value="Team Select"> Team Select </button> 
-            		<div class="dropdown-content">
-    					<div onclick="selectTeam('hawks')"> <img src='https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png' width="85"></div>
-    					<div onclick="selectTeam('celtics')"> <img src='https://loodibee.com/wp-content/uploads/nba-boston-celtics-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('nets')"> <img src='https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo.png' width="85" ></div>
-    					<div onclick="selectTeam('hornets')"> <img src='https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('bulls')"> <img src='https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('cavs')"> <img src='https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022.png' width="85" > </div>
-    					<div onclick="selectTeam('mavericks')"> <img src='https://loodibee.com/wp-content/uploads/dallas-mavericks-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('nuggets')"> <img src='https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018.png' width="85" > </div>
-    					<div onclick="selectTeam('pistons')"> <img src='https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('warriors')"> <img src='https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020.png' width="85" > </div>
-    					<div onclick="selectTeam('rockets')"> <img src='https://loodibee.com/wp-content/uploads/houston-rockets-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('pacers')"> <img src='https://loodibee.com/wp-content/uploads/indiana-pacers-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('clippers')"> <img src='https://loodibee.com/wp-content/uploads/los-angeles-clippers-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('lakers')"> <img src='https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('grizzlies')"> <img src='https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('heat')"> <img src='https://loodibee.com/wp-content/uploads/miami-heat-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('bucks')"> <img src='https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo.png' width="85"> </div>
-    					<div onclick="selectTeam('timberwolves')"> <img src='https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('pelicans')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('knicks')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('thunder')"> <img src='https://loodibee.com/wp-content/uploads/oklahoma-city-thunder-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('magic')"> <img src='https://loodibee.com/wp-content/uploads/orlando-magic-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('sixers')"> <img src='https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('suns')"> <img src='https://loodibee.com/wp-content/uploads/phoenix-suns-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('blazers')"> <img src='https://loodibee.com/wp-content/uploads/portland-trail-blazers-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('kings')"> <img src='https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo.png' width="85" > </div>
-    					<div onclick="selectTeam('spurs')"> <img src='https://loodibee.com/wp-content/uploads/san-antonio-spurs-logo-symbol.png' width="85" > </div>
-    					<div onclick="selectTeam('raptors')"> <img src='https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020.png' width="85" > </div>
-    					<div onclick="selectTeam('jazz')"> <img src='https://loodibee.com/wp-content/uploads/utah-jazz-logo-2022.png' width="85" > </div>
-    					<div onclick="selectTeam('wizards')"> <img src='https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png' width="85" > </div>
+            		<div class="dropdown-content" id="dropdown-content">
+    					<div onclick="selectTeam('hawks')"> <img src='https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png' width="50"></div>
+    					<div onclick="selectTeam('celtics')"> <img src='https://loodibee.com/wp-content/uploads/nba-boston-celtics-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('nets')"> <img src='https://loodibee.com/wp-content/uploads/nba-brooklyn-nets-logo.png' width="50" ></div>
+    					<div onclick="selectTeam('hornets')"> <img src='https://loodibee.com/wp-content/uploads/nba-charlotte-hornets-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('bulls')"> <img src='https://loodibee.com/wp-content/uploads/nba-chicago-bulls-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('cavaliers')"> <img src='https://loodibee.com/wp-content/uploads/Clevelan-Cavaliers-logo-2022.png' width="50" > </div>
+    					<div onclick="selectTeam('mavericks')"> <img src='https://loodibee.com/wp-content/uploads/dallas-mavericks-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('nuggets')"> <img src='https://loodibee.com/wp-content/uploads/nba-denver-nuggets-logo-2018.png' width="50" > </div>
+    					<div onclick="selectTeam('pistons')"> <img src='https://loodibee.com/wp-content/uploads/nba-detroit-pistons-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('warriors')"> <img src='https://loodibee.com/wp-content/uploads/nba-golden-state-warriors-logo-2020.png' width="50" > </div>
+    					<div onclick="selectTeam('rockets')"> <img src='https://loodibee.com/wp-content/uploads/houston-rockets-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('pacers')"> <img src='https://loodibee.com/wp-content/uploads/indiana-pacers-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('clippers')"> <img src='https://loodibee.com/wp-content/uploads/los-angeles-clippers-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('lakers')"> <img src='https://loodibee.com/wp-content/uploads/nba-los-angeles-lakers-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('grizzlies')"> <img src='https://loodibee.com/wp-content/uploads/nba-memphis-grizzlies-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('heat')"> <img src='https://loodibee.com/wp-content/uploads/miami-heat-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('bucks')"> <img src='https://loodibee.com/wp-content/uploads/nba-milwaukee-bucks-logo.png' width="50"> </div>
+    					<div onclick="selectTeam('timberwolves')"> <img src='https://loodibee.com/wp-content/uploads/nba-minnesota-timberwolves-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('pelicans')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-orleans-pelicans-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('knicks')"> <img src='https://loodibee.com/wp-content/uploads/nba-new-york-knicks-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('thunder')"> <img src='https://loodibee.com/wp-content/uploads/oklahoma-city-thunder-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('magic')"> <img src='https://loodibee.com/wp-content/uploads/orlando-magic-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('sixers')"> <img src='https://loodibee.com/wp-content/uploads/nba-philadelphia-76ers-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('suns')"> <img src='https://loodibee.com/wp-content/uploads/phoenix-suns-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('blazers')"> <img src='https://loodibee.com/wp-content/uploads/portland-trail-blazers-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('kings')"> <img src='https://loodibee.com/wp-content/uploads/nba-sacramento-kings-logo.png' width="50" > </div>
+    					<div onclick="selectTeam('spurs')"> <img src='https://loodibee.com/wp-content/uploads/san-antonio-spurs-logo-symbol.png' width="50" > </div>
+    					<div onclick="selectTeam('raptors')"> <img src='https://loodibee.com/wp-content/uploads/nba-toronto-raptors-logo-2020.png' width="50" > </div>
+    					<div onclick="selectTeam('jazz')"> <img src='https://loodibee.com/wp-content/uploads/utah-jazz-logo-2022.png' width="50" > </div>
+    					<div onclick="selectTeam('wizards')"> <img src='https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png' width="50" > </div>
   					</div>
         		</div>
-				<div id="title"> <h1> Jersey Grids </h1> </div> 
+				<img id="title" src="jerseyGridsLogo.png">
 				<form autocomplete="off">
 				<div class="search" id="search">
                 		<input type="text" placeholder="Search Players" name="playerSearch" id="searchBar" autocomplete="off">
@@ -54,8 +54,8 @@
         	</div>
 
 		<div class="flex-container">
-			<div class="logos">
-				 <div class="box"></div>
+			<div class="col">
+				 <div class="flex-col"> &nbsp;</div>
 				 <img src="" class="teamLogo" id="team1"/>
 				 <img src="" class="teamLogo" id="team2"/>
 				 <img src="" class="teamLogo" id="team3"/>
