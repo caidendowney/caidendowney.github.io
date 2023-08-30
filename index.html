@@ -10,7 +10,6 @@
 		<body onload="generate()">
 			<div class="container" id='topNavBar'>
 				<div class="dropdown">
-					<!--<img id="selectimg" src=""> -->
             		<button class="dropbtn" id='dropbtn' value="Team Select"> Team Select </button> 
             		<div class="dropdown-content" id="dropdown-content">
     					<div onclick="selectTeam('hawks')"> <img src='https://loodibee.com/wp-content/uploads/nba-atlanta-hawks-logo.png' width="50"></div>
@@ -45,7 +44,7 @@
     					<div onclick="selectTeam('wizards')"> <img src='https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png' width="50" > </div>
   					</div>
         		</div>
-				<img id="title" src="./docs/jerseyGridsLogo.png">
+				<img id="title" src="jerseyGridsLogo.png">
 				<form autocomplete="off">
 				<div class="search" id="search">
                 		<input type="text" placeholder="Search Players" name="playerSearch" id="searchBar" autocomplete="off">
@@ -100,12 +99,12 @@
 					<p>*Note this doesn't include any new players or new numbers for the upcoming 2023-2024 NBA season* </p>
 				</div>
 			</div>
-				<div class="howtoplay" id="gridComplete"> 
+				<div id="gridComplete"> 
 					<div class="howtoplay-content">
 						<span class="close" onclick="hideWin()">&times;</span>
 						<h2> Congratulations! </h2>
 						<p> You have completed the grid! Would you like to play again? </p>
-						<button class="generateButton" onclick="generate(); hideWin();"> Play Again </button>
+						<button class="generateButton" onclick="window.location.reload();"> Play Again </button>
 					</div>
 				</div>
 		</div>

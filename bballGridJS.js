@@ -297,7 +297,7 @@ const teams = {
 
 	function addHeadshot(src, div){
 		var elem = document.createElement("img");
-		console.log()
+		elem.className = "playerImg";
 		elem.src = src;
 		elem.addEventListener("error", function(event) { // IF NO IMAGE USE BACKUP
   			event.target.src = "https://cdn.nba.com/headshots/nba/latest/260x190/fallback.png";
@@ -309,14 +309,13 @@ const teams = {
 
 	function checkWin(){
 		const boxes = document.getElementsByClassName("solidPlayer").length;
-		if (boxes == 9){
+		if (boxes == 1){
 			win();
 		}
 	}
 
 	function checkPlayer(player, team, number){
 		if (usedPlayers.includes(player)){ // CHECK IF PLAYER HAS BEEN USED
-			console.log("PLAYER USED");
 			return false;
 		}
 		if (team == "team1"){
