@@ -27,6 +27,9 @@ u {
 
 /* MOBILE SCREEN */
 @media only screen and (max-width: 700px) {
+  body {
+    background-color: white;
+  }
 	#title{
 	margin: 0px 2vw 0px;
 	width: 65vw;
@@ -36,7 +39,7 @@ u {
 	justify-content: center;
 }
 #gridComplete {
-  background-color: white;
+  background-color: #757083;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
