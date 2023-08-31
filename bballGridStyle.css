@@ -13,9 +13,9 @@ p {
 	color: #090C08;
 }
 body {
-	padding: 10px;
-	margin: 10px;
-	background-color: white;
+	padding: 3px;
+	margin: 3px;
+	background-color: #474056;
 }
 img{
     height: auto;
@@ -26,7 +26,7 @@ u {
 }
 
 /* MOBILE SCREEN */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	#title{
 	margin: 0px 2vw 0px;
 	width: 65vw;
@@ -100,6 +100,7 @@ u {
 .playerSquare:hover {
   background-color: #474056  !important;
 }
+
 .playerText{
 	font-size: 1em;
 	justify-content: center;
@@ -149,22 +150,18 @@ u {
 }
 
 .search{
-    padding-left: 1em;
     display: none;
     position: relative; 
 } 
 input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 8px;
   font-size: 20px;
 }
 
 .search-items {
   position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
   z-index: 99;
   cursor:pointer;
   /*position the autocomplete items to be the same width as the container:*/
@@ -173,11 +170,11 @@ input {
   right: 0;
 }
 .search-items div {
-  padding: 10px;
+  padding: 8px;
   font-size: 20px;
   background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4;
-  width: 25em; 
+  width: 80vw; 
+  border-radius: 5px;
 }
 .search-items div:hover {
   background-color: #e9e9e9; 
@@ -188,8 +185,8 @@ input {
   color: #ffffff; 
 }
 input[type=text]{
-    width:25em;
-    height:3em;
+    width:80vw;
+    height:6vw;
     border-radius:10px;
 }      
 
@@ -280,7 +277,7 @@ b {
 
 }
 /* COMPUTER SCREEN */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 701px) {
 #title{
 	margin: 0px 2vw 0px;
   width: 65vw;
@@ -404,7 +401,6 @@ b {
 }
 
 .search{
-    padding-left: 1em;
     display: none;
     position: relative; 
 
@@ -418,9 +414,6 @@ input {
 
 .search-items {
   position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
   z-index: 99;
   cursor:pointer;
   /*position the autocomplete items to be the same width as the container:*/
@@ -432,7 +425,8 @@ input {
   padding: 10px;
   font-size: 20px;
   background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
+  border-radius: 5px;
+  width: 40vw;
 }
 .search-items div:hover {
   background-color: #e9e9e9; 
@@ -443,7 +437,7 @@ input {
   color: #ffffff; 
 }
 input[type=text]{
-    width:35em;
+    width:40vw;
     height:3em;
     border-radius:10px;
 }      

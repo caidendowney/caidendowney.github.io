@@ -309,7 +309,7 @@ const teams = {
 
 	function checkWin(){
 		const boxes = document.getElementsByClassName("solidPlayer").length;
-		if (boxes == 1){
+		if (boxes == 9){
 			win();
 		}
 	}
