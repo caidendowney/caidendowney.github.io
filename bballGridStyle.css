@@ -1,39 +1,39 @@
 h1 {
-	text-align: center;
-	font-size: 50px;
-	color: black;
-	font-family: 'Monaco', monospace;
-	}
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-family: 'Monaco', monospace;
+  }
 h2 {
-	font-size: 25px;
-	color: #090C08;
+  font-size: 25px;
+  color: #090C08;
 }
 p {
-	font-size: 20px;
-	color: #090C08;
+  font-size: 20px;
+  color: #090C08;
 }
 body {
-	padding: 3px;
-	margin: 3px;
-	background-color: #474056;
+  padding: 3px;
+  margin: 3px;
+  background-color: #FAF9F6;
 }
 img{
     height: auto;
     max-width: 100%;
 }
 u {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* MOBILE SCREEN */
 @media only screen and (max-width: 700px) {
-	#title{
-	margin: 0px 2vw 0px;
-	width: 65vw;
-	height: 6vw;
+  #title{
+  margin: 0px 2vw 0px;
+  width: 65vw;
+  height: 6vw;
 }
 #topNavBar{
-	justify-content: center;
+  justify-content: center;
 }
 #gridComplete {
   background-color: #757083;
@@ -43,7 +43,7 @@ u {
   top: 30%;
   left: 30%;
   width: 50%; /* Full width */
-  height: 25%; /* Full height */
+  height: 36%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   border-style: solid;
   border-color: black;
@@ -88,23 +88,23 @@ u {
   flex-wrap: wrap;
 }
 .playerSquare {
-	height: 22vw;
-	width: 22vw;
-	border: 1px solid black;
-	background-color: #757083;
-	flex-grow: 1;
-	text-align: center;
-	position: relative;
-	border-radius:10px;
+  height: 22vw;
+  width: 22vw;
+  border: 1px solid black;
+  background-color: #757083;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  border-radius:10px;
 }
 .playerSquare:hover {
   background-color: #474056  !important;
 }
 
 .playerText{
-	font-size: 1em;
-	justify-content: center;
-	background-color: rgba(0,0,0,.8);
+  font-size: 12px;
+  justify-content: center;
+  background-color: rgba(0,0,0,.8);
   color: #fff;
   overflow: hidden;
   text-overflow: clip;
@@ -115,32 +115,34 @@ u {
   border-radius:10px;
 }
 .playerImg{
-  position: relative;
-  top: 3.5vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .solidPlayer{
-	height: 22vw;
-	width: 22vw;
-	border: 1px solid black;
-	background-color: #8fce00;
-	flex-grow: 1;
-	text-align: center;
-	position: relative;
-	border-radius:10px;
+  height: 22vw;
+  width: 22vw;
+  border: 1px solid black;
+  background-color: #8fce00;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  border-radius:10px;
+  overflow: hidden;
 }
 .flex-col {
   flex: 1;
-  font-size: 15vw;
+  font-size: 13vw;
   font-family: 'Brush Script MT';
   text-align: center;
 }
 .teamLogo {
-	height: 22vw;
-	width: 22vw;
-	justify-content: center;
+  height: 22vw;
+  width: 22vw;
+  justify-content: center;
 }
 .col{
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -191,30 +193,30 @@ input[type=text]{
 }      
 
 .generateButton{
-	background-color: #50C878;
-	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 18px;
-  	border-radius:10px;	
-  	cursor: pointer;
+  background-color: #50C878;
+  padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius:10px; 
+    cursor: pointer;
 }
 #bottom{
-	justify-content: center;
-	text-align: center;
-	padding: 15px 32px;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 32px;
 }
 .selectButton{
-	background-color: #4CBB17;
-	padding: 5px 20px; 
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 12px;
-  	float: right;	
-  	border-radius:10px;
-  	cursor:pointer;
+  background-color: #4CBB17;
+  padding: 5px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    float: right; 
+    border-radius:10px;
+    cursor:pointer;
 }
 .container { /* TOP NAV BAR */
     align-items: center;
@@ -248,7 +250,7 @@ input[type=text]{
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 20vwpx;
+  min-width: 20vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -279,12 +281,12 @@ b {
 /* COMPUTER SCREEN */
 @media only screen and (min-width: 701px) {
 #title{
-	margin: 0px 2vw 0px;
+  margin: 0px 2vw 0px;
   width: 65vw;
   height: 6vw;
 }
 #topNavBar{
-	justify-content: center;
+  justify-content: center;
 }
 #gridComplete {
   background-color: #757083;
@@ -293,8 +295,8 @@ b {
   z-index: 99; /* Sit on top */
   top: 30%;
   left: 30%;
-  width: 50%; /* Full width */
-  height: 20%; /* Full height */
+  width: 40%; /* Full width */
+  height: 25%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   border-style: solid;
   border-color: black;
@@ -340,22 +342,22 @@ b {
   flex-wrap: wrap;
 }
 .playerSquare {
-	height: 12vw;
-	width: 12vw;
-	border: 1px solid black;
-	background-color: #757083;
-	flex-grow: 1;
-	text-align: center;
-	position: relative;
-	border-radius:10px;
+  height: 12vw;
+  width: 12vw;
+  border: 1px solid black;
+  background-color: #757083;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  border-radius:10px;
 }
 .playerSquare:hover {
   background-color: #474056  !important;
 }
 .playerText{
-	font-size: 1.5em;
-	justify-content: center;
-	background-color: rgba(0,0,0,.8);
+  font-size: 14px;
+  justify-content: center;
+  background-color: rgba(0,0,0,.8);
   color: #fff;
   overflow: hidden;
   text-overflow: clip;
@@ -366,18 +368,20 @@ b {
   border-radius:10px;
 }
 .playerImg{
-  position: relative;
-  top: 3vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .solidPlayer{
-	height: 12vw;
-	width: 12vw;
-	border: 1px solid black;
-	background-color: #8fce00;
-	flex-grow: 1;
-	text-align: center;
-	position: relative;
-	border-radius:10px;
+  height: 12vw;
+  width: 12vw;
+  border: 1px solid black;
+  background-color: #8fce00;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  border-radius:10px;
+  overflow: hidden;
 }
 .flex-col {
   flex: 1;
@@ -386,12 +390,12 @@ b {
   text-align: center;
 }
 .teamLogo {
-	height: 12vw;
-	width: 12vw;
-	justify-content: center;
+  height: 12vw;
+  width: 12vw;
+  justify-content: center;
 }
 .col{
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -443,30 +447,30 @@ input[type=text]{
 }      
 
 .generateButton{
-	background-color: #50C878;
-	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 18px;
-  	border-radius:10px;	
-  	cursor: pointer;
+  background-color: #50C878;
+  padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius:10px; 
+    cursor: pointer;
 }
 #bottom{
-	justify-content: center;
-	text-align: center;
-	padding: 15px 32px;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 32px;
 }
 .selectButton{
-	background-color: #4CBB17;
-	padding: 5px 20px; 
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 12px;
-  	float: right;	
-  	border-radius:10px;
-  	cursor:pointer;
+  background-color: #4CBB17;
+  padding: 5px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    float: right; 
+    border-radius:10px;
+    cursor:pointer;
 }
 .container { /* TOP NAV BAR */
     align-items: center;

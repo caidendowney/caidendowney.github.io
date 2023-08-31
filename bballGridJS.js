@@ -203,10 +203,22 @@ const teams = {
 	function selectTeam(team){ 
 		teamObj= teams[team];
 		document.getElementById("dropbtn").value = team;
-		//document.getElementById("selectimg").src = teamObj.logo;
-		//document.getElementById("selectimg").style.display = 'block';
-		//document.getElementById("dropbtn").textContent = team.charAt(0).toUpperCase() + team.slice(1);
+		if (document.getElementsByClassName("solidPlayer").length > 0){
+			resetGrid();
+		}
 		generate();
+	}
+
+	function resetGrid(){
+		const completed = document.getElementsByClassName("solidPlayer");
+		for (div of completed){
+			id = div.id.substring(6);
+			console.log(id);
+			div.className = "playerSquare";
+			div.replaceChildren();
+			div.style.backgroundColor = "#757083";
+			div.onclick =  function() {showSearch(id)};  
+		}
 	}
 
 	function showSearch(num) {
