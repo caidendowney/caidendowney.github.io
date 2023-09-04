@@ -10,7 +10,7 @@ h2 {
 }
 p {
   font-size: 20px;
-  color: #090C08;
+  color: black;
 }
 body {
   padding: 3px;
@@ -36,7 +36,7 @@ u {
   justify-content: center;
 }
 #gridComplete {
-  background-color: #757083;
+  background-color: #FAF9F6;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
@@ -50,7 +50,7 @@ u {
   border-radius:10px;
 }
 .howtoplay {
-  background-color: #757083;
+  background-color: #FAF9F6;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -65,14 +65,14 @@ u {
 
 }
 .howtoplay-content {
-  background-color: #757083;
+  background-color: #FAF9F6;
   margin: 0 auto;
 }
 .close {
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  position: fixed;
 }
 
 .close:hover,
@@ -289,7 +289,7 @@ b {
   justify-content: center;
 }
 #gridComplete {
-  background-color: #757083;
+  background-color: #FAF9F6;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 99; /* Sit on top */
@@ -303,7 +303,7 @@ b {
   border-radius:10px;
 }
 .howtoplay {
-  background-color: #757083;
+  background-color: #FAF9F6;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -315,18 +315,17 @@ b {
   border-radius:10px;
   top: 15%;
   left: 25%;
-
 }
 .howtoplay-content {
-  background-color: #757083;
+  background-color: #FAF9F6;
   margin: 0 auto;
   border-radius:10px;
 }
 .close {
   color: #aaaaaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  position: fixed;
 }
 
 .close:hover,

@@ -2,7 +2,7 @@
 <html lang="en">
 	<!-- Comment -->
 	<head>
-		<meta charset = "utf-8">
+		<meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		 <link rel="stylesheet" href="bballGridStyle.css" />
 		 <title> Jersey Grids </title>
@@ -45,7 +45,7 @@
     					<div onclick="selectTeam('wizards')"> <img src='https://loodibee.com/wp-content/uploads/nba-washington-wizards-logo.png' width="60" > </div>
   					</div>
         		</div>
-				<img id="title" src="./docs/jerseyGridsLogo.png">
+				<img id="title" src="jerseyGridsLogo.png">
 				<form autocomplete="off">
 				<div class="search" id="search">
                 		<input type="text" placeholder="Search Players" name="playerSearch" id="searchBar" autocomplete="off">
@@ -86,7 +86,7 @@
 			<u onclick="howtoplay()"> <b> How To Play </b> </u>
 			<div class="howtoplay" id="howtoplay"> 
 				<div class="howtoplay-content">
-					<span class="close" onclick="hideHTP()">&times;</span>
+					<div class="close" onclick="hideHTP()">&times;</div>
 					<h2> How To Play </h2>
 
 					<p> The grid randomly generates three jersey numbers and three NBA teams. Each team is guranteed to have at least one player who has played under that number. To get a square correct you must select a player who has played at least one game with the team in its row, under the number in its column. </p>
